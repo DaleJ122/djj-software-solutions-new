@@ -15,9 +15,15 @@ const HomePage = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Navigation - Simple placeholder */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/40 py-4">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-background backdrop-blur-md border-b border-border/40 py-4">
         <div className="container mx-auto px-4 flex justify-between items-center">
-          <div className="text-xl font-bold">WebDevStudio</div>
+          <div className="flex items-center gap-2">
+            <img
+              src="/djjlogodark.png"
+              alt="DJJ Software Solutions Logo"
+              width="120"
+            />
+          </div>
           <nav className="hidden md:flex space-x-6">
             <a
               href="#hero"
@@ -206,7 +212,16 @@ const HomePage = () => {
 
       {/* Scroll to top button */}
       <button
-        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        onClick={() => {
+          // Use the global Lenis instance to scroll to top
+          const lenis = (window as any).lenis;
+          if (lenis) {
+            lenis.scrollTo(0, { duration: 1.2 });
+          } else {
+            // Fallback to native scrolling if Lenis isn't available
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }
+        }}
         className="fixed bottom-8 right-8 p-3 rounded-full bg-primary text-primary-foreground shadow-lg hover:bg-primary/90 transition-all"
       >
         <svg

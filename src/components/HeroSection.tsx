@@ -43,7 +43,7 @@ const HeroSection = ({
             className="mb-6"
           >
             <span className="inline-block py-1 px-3 rounded-full bg-blue-500/10 text-blue-400 text-sm font-medium mb-4">
-              Web Development Agency
+              Software Solutions Agency
             </span>
           </motion.div>
 

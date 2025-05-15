@@ -1,0 +1,17 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="60" cy="60" r="60" fill="#3B82F6" />
+  
+  <!-- DJJ Letters -->
+  <path d="M25 40H35C41.6274 40 47 45.3726 47 52V68C47 74.6274 41.6274 80 35 80H25V40Z" fill="white"/>
+  <path d="M25 50H33C35.2091 50 37 51.7909 37 54V66C37 68.2091 35.2091 70 33 70H25V50Z" fill="#3B82F6"/>
+  
+  <path d="M52 40H62V80H52V40Z" fill="white"/>
+  <path d="M62 40H72V80H62V40Z" fill="white"/>
+  
+  <path d="M77 40H87C93.6274 40 99 45.3726 99 52V68C99 74.6274 93.6274 80 87 80H77V40Z" fill="white"/>
+  <path d="M77 50H85C87.2091 50 89 51.7909 89 54V66C89 68.2091 87.2091 70 85 70H77V50Z" fill="#3B82F6"/>
+  
+  <!-- Software Solutions Text -->
+  <text x="60" y="95" font-family="Arial" font-size="8" font-weight="bold" text-anchor="middle" fill="white">SOFTWARE SOLUTIONS</text>
+</svg>
